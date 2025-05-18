@@ -4,7 +4,7 @@
 
 ### Преполагается что мы используем окружение laravel_env1 (https://github.com/sashabizoo/laravel_env1) для разворачивания проекта
 
-## Клонируем Laravel проект. Делаем команду (на выбор)
+## Клонируем Laravel проект в папку src. Делаем команду (на выбор)
 
 git clone git@github.com:sashabizoo/laravel_api_test1.git src 
 
@@ -13,6 +13,8 @@ git clone git@github.com:sashabizoo/laravel_api_test1.git src
 git clone https://github.com/sashabizoo/laravel_api_test1.git src
 
 ### заходим в папку src (папка с Laravel)
+
+cd src
    
 ### если файл .env в корне папки отсутствует, создаем его из файла копируя из .env.examples
   
@@ -81,7 +83,7 @@ Swagger документация тут: http://localhost:8889/api/documentation
 POST http://localhost:8889/api/orders – Создание нового заказа
 GET http://localhost:8889/api/orders/{id} – Получение информации о заказе по ID
 
-# Тесты
+# Интеграционные Тесты
 
 ### Для Mac OS:
 
