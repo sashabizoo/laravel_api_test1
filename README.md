@@ -134,7 +134,7 @@ docker compose exec app php artisan l5-swagger:generate
 
 docker-compose exec app php artisan l5-swagger:generate
 
-## Структура проекта
+# Структура проекта
 
 app/DTO - объекты передачи данных (Data Transfer Objects)
 
@@ -165,3 +165,7 @@ tests/Feature - интеграционные тесты
 .env - настройки окружения
 
 openapi.yaml - документация OpenAPI
+
+# Стек
+
+Laravel 11 + PHP 8.3 + MySQL 8 + Swagger UI (l5-swagger)
