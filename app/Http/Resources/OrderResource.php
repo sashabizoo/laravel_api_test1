@@ -7,6 +7,8 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class OrderResource extends JsonResource {
 
+    public static $wrap = null;
+    
     /**
      * @OA\Schema(
      *     schema="OrderResource",
@@ -23,7 +25,7 @@ class OrderResource extends JsonResource {
      *             @OA\Property(property="product_id", type="integer", example=3),
      *             @OA\Property(property="product_name", type="string", example="Product 3"),
      *             @OA\Property(property="quantity", type="integer", example=2),
-     *             @OA\Property(property="unit_price", type="number", format="float", example=120.00),
+     *             @OA\Property(property="unit_price", type="number", format="float", example=120.12),
      *         )
      *     )
      * )
