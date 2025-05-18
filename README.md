@@ -39,6 +39,7 @@ L5_SWAGGER_CONST_HOST=http://localhost:8889
 ### Для Mac OS:
 
 docker compose run --rm composer update --no-scripts
+
 docker compose run --rm composer run-script post-install-cmd
 
 docker compose run artisan key:generate
@@ -54,6 +55,7 @@ docker compose run artisan optimize:clear
 ### Для Linux:
 
 docker-compose run --rm composer update --no-scripts
+
 docker-compose run --rm composer run-script post-install-cmd
 
 docker-compose run artisan key:generate
