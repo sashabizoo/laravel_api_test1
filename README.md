@@ -72,15 +72,14 @@ docker compose run artisan l5-swagger:generate
 
 docker-compose run artisan l5-swagger:generate 
 
-# Запуск приложения
+# Запуск приложения (при настройках по умолчанию):
 
 Swagger документация тут: http://localhost:8889/api/documentation
 
-## API здесь: 
+## API здесь (при настройках по умолчанию): 
 
-POST: http://localhost:8889/api/orders
-
-GET: http://localhost:8889/api/orders/{id}
+POST http://localhost:8889/api/orders – Создание нового заказа
+GET http://localhost:8889/api/orders/{id} – Получение информации о заказе по ID
 
 # Тесты
 
