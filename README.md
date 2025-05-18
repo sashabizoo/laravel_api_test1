@@ -34,6 +34,8 @@ L5_SWAGGER_CONST_HOST=http://localhost:8889
 
 ### Делаем сборку, миграции сидеры, чистим кэш. Делаем команды:
 
+### Для Mac OS:
+
 docker compose run composer update
 
 docker compose run artisan key:generate
@@ -46,9 +48,29 @@ docker compose run artisan cache:clear
 
 docker compose run artisan optimize:clear
 
+### Для Linux:
+
+docker-compose run composer update
+
+docker-compose run artisan key:generate
+
+docker-compose run artisan migrate --seed
+
+chmod -R guo+w storage
+
+docker-compose run artisan cache:clear
+
+docker-compose run artisan optimize:clear
+
 ### Генерируем Swagger документация для API
 
+### Для Mac OS:
+
 docker compose run artisan l5-swagger:generate 
+
+### Для Linux:
+
+docker-compose run artisan l5-swagger:generate 
 
 ## Запуск приложения
 
@@ -62,19 +84,45 @@ GET: http://localhost:8889/api/orders/{id}
 
 ## Тесты
 
+### Для Mac OS:
+
 docker compose run artisan test tests/Feature/OrderTest.php
 
+### Для Linux:
+
+docker-compose run artisan test tests/Feature/OrderTest.php
+
 # Очистить кэши
+
+### Для Mac OS:
 
 docker compose run artisan cache:clear
 
 docker compose run artisan optimize:clear
 
+### Для Linux:
+
+docker-compose run artisan cache:clear
+
+docker-compose run artisan optimize:clear
+
 # Сбросить миграции и заново запустить сидеры
+
+### Для Mac OS:
 
 docker compose run artisan migrate:fresh --seed
 
+### Для Linux:
+
+docker-compose run artisan migrate:fresh --seed
+
 # Сгенерировать заново Swagger
+
+### Для Mac OS:
+
+docker compose exec app php artisan l5-swagger:generate
+
+### Для Linux:
 
 docker-compose exec app php artisan l5-swagger:generate
 
