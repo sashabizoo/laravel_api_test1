@@ -38,12 +38,12 @@ class OrderResource extends JsonResource {
             'id' => $this->id,
             'customer_name' => $this->customer_name,
             'customer_email' => $this->customer_email,
-            'total_price' => round($this->items->sum(fn($item) => $item->unit_price * $item->quantity), 2),
+            'total_price' => number_format($this->items->sum(fn($item) => $item->unit_price * $item->quantity), 2, '.', ''),
             'items' => $this->items->map(fn($item) => [
                 'product_id' => $item->product_id,
                 'product_name' => $item->product->name,
                 'quantity' => $item->quantity,
-                'unit_price' => $item->unit_price,
+                'unit_price' => number_format($item->unit_price, 2, '.', ''),
             ]),
         ];
     }
