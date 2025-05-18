@@ -81,6 +81,7 @@ Swagger документация тут: http://localhost:8889/api/documentation
 ## API здесь (при настройках по умолчанию): 
 
 POST http://localhost:8889/api/orders – Создание нового заказа
+
 GET http://localhost:8889/api/orders/{id} – Получение информации о заказе по ID
 
 # Интеграционные Тесты
