@@ -45,8 +45,10 @@ docker compose run artisan l5-swagger:generate
 
 Swagger документация тут: http://localhost:8889/api/documentation
 
-API здесь: 
+### API здесь: 
+
 POST: http://localhost:8889/api/orders
+
 GET: http://localhost:8889/api/orders/{id}
 
 ## Тесты
@@ -70,17 +72,31 @@ docker-compose exec app php artisan l5-swagger:generate
 ## Структура проекта
 
 app/DTO - объекты передачи данных (Data Transfer Objects)
+
 app/Http/Controllers/Api - API-контроллер
+
 app/Http/Requests - валидатор запросов
+
 app/Http/Resources - ресурс преобразовывающий данных в формат JSON для API
+
 app/Interfaces - интерфейсы репозиториев
+
 app/Models - модели Eloquent, базы данных
+
 app/Repositories - реализации репозиториев
-app/Services/ - бизнес-логика
+
+app/Services - бизнес-логика
+
 database/migrations - миграций БД
+
 database/seeders/ - сидеры БД
+
 database/factories - фабрики моделей БД генерирующие тестовые данные
+
 routes/api.php - маршруты API
+
 tests/Feature - интеграционные тесты
+
 .env - настройки окружения
+
 openapi.yaml - документация OpenAPI
