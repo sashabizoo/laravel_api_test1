@@ -1,4 +1,4 @@
-<strong># Laravel API Test Project </strong>
+# Laravel API Test Project
 
 # Установка
 
