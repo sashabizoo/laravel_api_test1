@@ -1,14 +1,14 @@
 # Laravel API Test Project
 
-## Установка
+# Установка
 
 ### Преполагается что мы используем окружение laravel_env1 (https://github.com/sashabizoo/laravel_env1) для разворачивания проекта
 
-### Клонируем Laravel проект. Делаем команду (на выбор)
+## Клонируем Laravel проект. Делаем команду (на выбор)
 
 git clone git@github.com:sashabizoo/laravel_api_test1.git src 
 
-или
+### или
 
 git clone https://github.com/sashabizoo/laravel_api_test1.git src
 
@@ -32,7 +32,7 @@ DB_PORT=3306
 
 L5_SWAGGER_CONST_HOST=http://localhost:8889
 
-### Делаем сборку, миграции сидеры, чистим кэш. Делаем команды:
+## Делаем сборку, миграции сидеры, чистим кэш. Делаем команды:
 
 ### Для Mac OS:
 
@@ -62,7 +62,7 @@ docker-compose run artisan cache:clear
 
 docker-compose run artisan optimize:clear
 
-### Генерируем Swagger документация для API
+## Генерируем Swagger документация для API
 
 ### Для Mac OS:
 
@@ -72,17 +72,17 @@ docker compose run artisan l5-swagger:generate
 
 docker-compose run artisan l5-swagger:generate 
 
-## Запуск приложения
+# Запуск приложения
 
 Swagger документация тут: http://localhost:8889/api/documentation
 
-### API здесь: 
+## API здесь: 
 
 POST: http://localhost:8889/api/orders
 
 GET: http://localhost:8889/api/orders/{id}
 
-## Тесты
+# Тесты
 
 ### Для Mac OS:
 
