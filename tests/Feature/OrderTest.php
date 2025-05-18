@@ -26,8 +26,7 @@ class OrderTest extends TestCase
 
         $response = $this->postJson('/api/orders', $payload);
         $response->assertStatus(201)
-            ->assertJsonStructure([
-            'data' => [
+            ->assertJsonStructure([            
                 'id',
                 'customer_name',
                 'customer_email',
@@ -40,7 +39,6 @@ class OrderTest extends TestCase
                         'unit_price',
                     ]
                 ]
-            ]
             ]);
     }
 
