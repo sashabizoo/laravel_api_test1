@@ -3,10 +3,13 @@
 ## Установка
 
 ### Преполагается что мы используем окружение laravel_env1 (https://github.com/sashabizoo/laravel_env1) для разворачивания проекта
+
 ### Клонируем Laravel проект. Делаем команду (на выбор)
 
 git clone git@github.com:sashabizoo/laravel_api_test1.git src 
+
 или
+
 git clone https://github.com/sashabizoo/laravel_api_test1.git src
 
 ### заходим в папку src (папка с Laravel)
@@ -16,11 +19,17 @@ git clone https://github.com/sashabizoo/laravel_api_test1.git src
 ### и копируем настройки из окружения laravel_env1 (файл .env в корне окружения), проверяем настройки
 
 DB_CONNECTION=mysql 
+
 DB_HOST=mysql 
+
 DB_USERNAME=root 
+
 DB_PASSWORD=password 
+
 DB_DATABASE=laravel_test 
+
 DB_PORT=3306
+
 L5_SWAGGER_CONST_HOST=http://localhost:8889
 
 ### Делаем сборку, миграции сидеры, чистим кэш. Делаем команды:
