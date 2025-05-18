@@ -40,6 +40,8 @@ L5_SWAGGER_CONST_HOST=http://localhost:8889
 
 docker compose run composer update
 
+Если на этом этапе какие-то пакеты не установились, просто запустите docker compose run composer update еще раз
+
 docker compose run artisan key:generate
 
 docker compose run artisan migrate --seed
@@ -53,6 +55,8 @@ docker compose run artisan optimize:clear
 ### Для Linux:
 
 docker-compose run composer update
+
+Если на этом этапе какие-то пакеты не установились, просто запустите docker-compose run composer update еще раз
 
 docker-compose run artisan key:generate
 
